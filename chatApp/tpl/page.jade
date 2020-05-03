@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title= "Real time web chat"
+        script(src='/chat.js')
+        script(src='/socket.io/socket.io.js')
+        script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js')
+    body
+        #content(style='width: 400px; height: 100px; margin: 0 0 20px 0; border: solid 1px #999; overflow-y: scroll;')
+        .controls
+            | Name:
+            input#name(style='width::353px;')
+            br
+            input#field(style='width:353px;')
+            input#send(type='button', value='send')
